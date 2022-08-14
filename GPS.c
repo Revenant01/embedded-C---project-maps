@@ -1,16 +1,16 @@
-#include<stdio.h>
-#include "STD_TYPES.h"
-#include<stdlib.h>
+#include "stdio.h"
+#include "../../STD_TYPES.h"
+#include"stdlib.h"
 #include<time.h>
-#define ROWS 10
-#define COLOUMNS 10
-void fill_random (u8 arr[ROWS][COLOUMNS], u8 max);
-void print(u8 arr[ROWS][COLOUMNS]);
+const u8 rows =10;
+const u8 coloumns = 10;
+void fill_random (u8 arr[rows][coloumns], u8 max);
+void print(u8 arr[rows][coloumns]);
 u8 options();
 void main(void)
 {
-	srand(time(NULL));
-	u8 arr[ROWS][COLOUMNS];
+	srand(time(0));
+	u8 arr[rows][coloumns];
 	u8 row1,row2,coloumn1,coloumn2;
 	fill_random( arr, 2);
 	print(arr);
@@ -35,21 +35,21 @@ void main(void)
 			}
 	}
 }
-void fill_random (u8 arr[ROWS][COLOUMNS], u8 max)
+void fill_random (u8 arr[rows][coloumns], u8 max)
 {
-	for (u8 i=0 ; i<ROWS ; i++)
+	for (u8 i=0 ; i<rows ; i++)
 	{
-		for(u8 j=0 ; j<COLOUMNS ; j++)
+		for(u8 j=0 ; j<coloumns ; j++)
 		{
 			arr[i][j]=rand()% max;
 		}
 	}
 }
-void print(u8 arr[ROWS][COLOUMNS])
+void print(u8 arr[rows][coloumns])
 {
-	for (u8 i=0 ; i<ROWS ; i++)
+	for (u8 i=0 ; i<rows ; i++)
 	{
-		for(u8 j=0 ; j<COLOUMNS ; j++)
+		for(u8 j=0 ; j<coloumns ; j++)
 		{
 			printf("%d ",arr[i][j]);
 		}
