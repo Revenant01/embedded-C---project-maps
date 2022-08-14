@@ -9,7 +9,7 @@ void print(u8 arr[rows][coloumns]);
 u8 options();
 void main(void)
 {
-	printf("khalid \n", );
+	printf("khalid \n");
 	srand(time(0));
 	u8 arr[rows][coloumns];
 	u8 row1,row2,coloumn1,coloumn2;
