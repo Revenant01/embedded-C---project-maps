@@ -1,5 +1,5 @@
 #include "stdio.h"
-#include "../../STD_TYPES.h"
+#include "STD_TYPES.h"
 #include"stdlib.h"
 #include<time.h>
 const u8 rows =10;
@@ -9,6 +9,7 @@ void print(u8 arr[rows][coloumns]);
 u8 options();
 void main(void)
 {
+	printf("project");
 	srand(time(0));
 	u8 arr[rows][coloumns];
 	u8 row1,row2,coloumn1,coloumn2;
